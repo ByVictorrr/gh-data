@@ -39,7 +39,7 @@ jobs:
     steps:
       # how do i get the atficate from build
       - name: Get build artificats
-        uses: actions/download-artificate@v3
+        uses: actions/download-artifact@v3
         with:
           # grab zip and unzip it here
           name: dist-files
