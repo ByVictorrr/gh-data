@@ -16,7 +16,7 @@ jobs:
           # this stores on github somewhere
           path: ~/.npm
           # key is used to determine whether need to recache
-          key: dep-node-modules-${{ hashFiles('**/packages-lock.json') }}
+          key: dep-node-modules-${{ hashFiles('**/package-lock.json') }}
       - name: Install dependencies
         run: npm ci
       - name: Lint code
